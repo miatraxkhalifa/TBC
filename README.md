@@ -12,7 +12,7 @@ This project is created with [Laravel Jetstream](https://jetstream.laravel.com/1
 
 ```
 # Clone the repository from GitHub and open the directory:
-git clone https://github.com/miatraxkhalifa/Thebisdakcoder.git
+git clone https://github.com/miatraxkhalifa/TBC.git
 
 # cd into your project directory
 cd larawind
