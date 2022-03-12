@@ -17,8 +17,10 @@ class MainDashboard extends Component
         return view('livewire.admin.main-dashboard', [
             'post' => count(Post::where('status', 1)->get()),
             'contributor' => count(Post::select('users_id')->where('status', 1)->distinct()->get()),
-            'view' => Post::sum('views'),
-            'comment' => Comment::count('id'),
+            'view' => Post::where('status',1)->sum('views'),
+            'comment' => Comment::with('Post')->WhereHas('Post', function ($q){
+                $q->where('status', '1');   //->latest()
+                 })->count('id'),
         ]);
     }
 

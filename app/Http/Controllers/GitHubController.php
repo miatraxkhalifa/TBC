@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\RoleUser;
 use Illuminate\Http\Request;
 
 use App\Models\User;
@@ -37,7 +38,10 @@ class GitHubController extends Controller
             'password' => Hash::make(Str::random(12))
         ]);
 
-        $user->RoleUser()->create(['roles_id' => '2'])->save();
+        $user->RoleUser()->firstorcreate(
+            ['roles_id' => '2', 'users_id' => $user->id],
+            [],
+            )->save();
 
         Auth::login($user, true);
 
