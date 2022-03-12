@@ -18,7 +18,7 @@
                     <span>Save</span>
                 </button>
             </div>
-           
+     
         </div>
 
         <div class="px-4 py-3 mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800">
@@ -56,7 +56,7 @@
             <!-- Section 1 -->
             <label class="block my-3 text-sm" wire:ignore>
                 <span class="text-gray-700 dark:text-gray-400 pb-4">Section 1</span>
-                <x-tinymce wire:model="message1" placeholder="Type anything you want..." />
+                <x-input.tinymce wire:model="message1" placeholder="Type anything you want..." />
             </label>
 
             <div class="flex justify-between -mt-2">
@@ -102,7 +102,7 @@
                 <x-slot name="body">
                     <label class="block my-3 text-sm" wire:ignore>
                         <span class="text-gray-700 dark:text-gray-400 pb-4">Section 2</span>
-                        <x-tinymce wire:model="message2" placeholder="Type anything you want..." />
+                        <x-input.tinymce wire:model="message2" placeholder="Type anything you want..." />
                     </label>
 
                     <x-image-upload name="image2"
@@ -116,7 +116,7 @@
                 <x-slot name="body">
                     <label class="block my-3 text-sm" wire:ignore>
                         <span class="text-gray-700 dark:text-gray-400 pb-4">Section 3</span>
-                        <x-tinymce wire:model="message3" placeholder="Type anything you want..." />
+                        <x-input.tinymce wire:model="message3" placeholder="Type anything you want..." />
                     </label>
                     <x-image-upload name="image3"
                     wire:model="image3" 
@@ -129,7 +129,7 @@
                 <x-slot name="body">
                     <label class="block my-3 text-sm" wire:ignore>
                         <span class="text-gray-700 dark:text-gray-400 pb-4">Section 4</span>
-                        <x-tinymce wire:model="message4" placeholder="Type anything you want..." />
+                        <x-input.tinymce wire:model="message4" placeholder="Type anything you want..." />
                     </label>
 
                     <x-image-upload name="image4"

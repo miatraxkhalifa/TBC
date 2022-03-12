@@ -36,7 +36,7 @@ $categories = Category::orderby('name', 'ASC')->get();
         <x-slot name="body">
             <label class="block my-3 text-sm" >
                 <span class="text-gray-700 dark:text-gray-400 pb-4">Section 1  </span>
-                <x-tinymce wire:model.defer="message1" placeholder="Type anything you want..." />
+                <x-input.tinymce wire:model.defer="message1" placeholder="Type anything you want..." />
             </label>
             <x-image-upload name="image1" 
             wire:model.defer="image1" 
@@ -49,7 +49,7 @@ $categories = Category::orderby('name', 'ASC')->get();
         <x-slot name="body">
             <label class="block my-3 text-sm">
                 <span class="text-gray-700 dark:text-gray-400 pb-4">Section 2</span>
-                <x-tinymce wire:model="message2" placeholder="Type anything you want..." />
+                <x-input.tinymce wire:model="message2" placeholder="Type anything you want..." />
             </label>
             <x-image-upload name="image2"
             wire:model="image2" 
@@ -62,7 +62,7 @@ $categories = Category::orderby('name', 'ASC')->get();
         <x-slot name="body">
             <label class="block my-3 text-sm" >
                 <span class="text-gray-700 dark:text-gray-400 pb-4">Section 3</span>
-                <x-tinymce wire:model="message3" placeholder="Type anything you want..." />
+                <x-input.tinymce wire:model="message3" placeholder="Type anything you want..." />
             </label>
             <x-image-upload name="image3"
             wire:model="image3" 
@@ -77,7 +77,7 @@ $categories = Category::orderby('name', 'ASC')->get();
         <x-slot name="body">
             <label class="block my-3 text-sm" >
                 <span class="text-gray-700 dark:text-gray-400 pb-4">Section 4</span>
-                <x-tinymce wire:model="message4" placeholder="Type anything you want..." />
+                <x-input.tinymce wire:model="message4" placeholder="Type anything you want..." />
             </label>
             <x-image-upload name="image4"
             wire:model="image4" 
