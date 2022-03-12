@@ -34,11 +34,11 @@
         </ul>
         <h2 class="text-lg font-bold sm:text-xl md:text-2xl dark:text-gray-50"><a href="{{route('post.show', [$post->slug]) }}">{{$post->name}}</a></h2>
         <p class="text-sm text-gray-500 dark:text-gray-50"> 
-            
-            @isset($post->body[0]->body)  <section class="text-black bg:text-white">
+      
+            @isset($post->body[0]->body)     <section class="text-black dark:text-white">
             {!! implode(' ', array_slice(explode(' ', $post->body[0]->body), 0, 10)); !!} 
-           
-            @endisset </section>
+            </section>
+            @endisset 
 
         </p>
         <p class="pt-2 text-xs font-medium dark:text-white">By: {{$post->user->name}} · <span class="mx-1"> {{
