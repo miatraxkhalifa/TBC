@@ -9,8 +9,8 @@ $github = $social->where('name', 'GitHub')->pluck('link')->first();
 $dribble = $social->where('name', 'Dribble')->pluck('link')->first();
 @endphp
 
-<section class="text-gray-700 bg-white body-font dark:bg-black fixed inset-x-0 bottom-0">
-    <div class="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
+<section class="text-gray-700 bg-white body-font dark:bg-black fixed inset-x-0 bottom-0 hidden md:block">
+    <div class="container flex flex-col items-center px-8 py-8 xs:pt-1 mx-auto max-w-7xl sm:flex-row">
         <a href="{{route('dashboard')}}" class="text-xl font-black leading-none text-gray-900 select-none logo dark:text-gray-50 dark:hover:text-pink-400"> T B C<span class="text-indigo-600 dark:text-indigo-300">.</span></a>
         <p class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0 dark:text-gray-400">© 2022 The Bisdak Coder - Learn to Code!
         </p>
