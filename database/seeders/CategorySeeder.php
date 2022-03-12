@@ -48,13 +48,13 @@ class CategorySeeder extends Seeder
             $q++;
         } */
 
-        $i = 0;
+/*         $i = 0;
         while ($i <= 30) {
             CategoryPost::create([
                 'posts_id' => Post::get()->pluck('id')->random(),
                 'categories_id' => Category::get()->pluck('id')->random(),
             ]);
             $i++;
-        }
+        } */
     }
 }
