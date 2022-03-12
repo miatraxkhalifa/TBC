@@ -22,9 +22,9 @@ composer install
 npm install && npm run dev
 
 # Start prepare the environment:
-cp .env.example .env // setup database credentials
+setup database credentials //db name Blog
 php artisan key:generate
-php artisan migrate
+php artisan migrate:fresh --seed
 php artisan storage:link
 
 # Run your server
