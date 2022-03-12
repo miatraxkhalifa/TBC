@@ -16,7 +16,7 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->longtext('name');
-            $table->longtext('slug')->unique();
+            $table->longtext('slug');
             $table->integer('views')->default('0');
             $table->integer('likes')->default('0');      
             $table->foreignId('users_id')->references('id')->on('users')->cascadeOnDelete();  
