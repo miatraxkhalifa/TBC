@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
 
        $user->RoleUser()->create(['roles_id' => '1'])->save();
 
-       $faker = Faker::create();
+/*        $faker = Faker::create();
        $i = 0;
        while ($i <= 20) {
            User::create([
@@ -34,6 +34,6 @@ class UserSeeder extends Seeder
                'password' => Hash::make('Romans123!'),
            ])->RoleUser()->create(['roles_id' => '2'])->save();
        $i++;   
-       }
+       } */
     }
 }
