@@ -4,14 +4,16 @@ namespace App\Http\Livewire\Blog;
 
 use App\Models\Post;
 use Livewire\Component;
-
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Show extends Component
 {
+    use AuthorizesRequests;
     public Post $post;
 
     public function mount(Post $post)
     {
+        $this->authorize('published', $this->post);
         $this->post = $post;
         $this->post->views++;
         $this->post->save();

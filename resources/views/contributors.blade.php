@@ -54,7 +54,7 @@
 
     <!-- main -->
     <main>
-        <section class="bg-white dark:bg-gray-800">
+        <section class="bg-white dark:bg-gray-800 mb-2">
             <div class="w-full px-5 py-6 mx-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 max-w-7xl">
                
                 <livewire:contributors />

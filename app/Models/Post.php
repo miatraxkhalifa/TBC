@@ -14,7 +14,7 @@ class Post extends Model
     use Sluggable;
 
     protected $fillable = [
-        'name', 'views', 'slug' ,'likes', 'status', 'image', 'image_alt', 'users_id'
+        'name', 'views', 'slug' ,'likes', 'status', 'image', 'users_id'
     ];
 
     public function sluggable():array

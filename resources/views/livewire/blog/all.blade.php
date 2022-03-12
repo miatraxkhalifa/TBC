@@ -1,4 +1,4 @@
-<div>
+<div class="mb-8">
     <div class="container grid px-6 mx-auto">
         <div class="flex justify-between flex-wrap">
 

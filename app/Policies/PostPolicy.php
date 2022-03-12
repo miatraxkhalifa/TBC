@@ -21,9 +21,15 @@ class PostPolicy
     public function submit(User $user, Post $post)
     {
         return $user->id === $post->users_id
-        ? Response::allow()
-        : Response::deny('You do not own this post.');
+            ? Response::allow()
+            : Response::deny('You do not own this post.');
     }
 
+    public function published(?User $user, Post $post)
+    {
+        return $post->status == 1
+            ? Response::allow()
+            : Response::deny('Post not publised');
+        
+    }
 }
- 
